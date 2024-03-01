@@ -13,12 +13,14 @@
 }
 .logo{
     width: 150px;
+    
     cursor: default;
     border-radius: 50%;
     z-index: 0;
     position: relative;
     left: 48px;
     top: 10%;
+    
 }
 
 .title{
@@ -33,4 +35,19 @@
     transform: translate(-50%,-5%);
     text-align: center;
     text-shadow: 0 0 5px;
+}
+#navbar-logo{
+    position: relative;
+    background-image: linear-gradient(),url(logo_main.png);
+}
+.logo_navbar{
+    width: 200px;
+    height: 59.1px;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(logo_main.png);
+    background-position: center();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+
 }
