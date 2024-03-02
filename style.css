@@ -16,3 +16,16 @@
     top: 28%;
     cursor: default;
 }
+.title{
+    
+    cursor: default;
+    color: white;
+    font-size: 50px;
+    font-weight: 20px;
+    position: relative;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%,-5%);
+    text-align: center;
+    text-shadow: 0 0 5px;
+}
