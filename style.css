@@ -16,6 +16,15 @@
     top: 28%;
     cursor: default;
 }
+.disc1{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    text-shadow: 0 0 5px;
+    position: relative;
+    top: 38%;
+    cursor: default;
+}
 .title{
     
     cursor: default;
