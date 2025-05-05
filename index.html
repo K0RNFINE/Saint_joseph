@@ -17,6 +17,15 @@
       display: none;
       margin-top: 20px;
     }
+    
+    #message1 {
+      color: rgb(255, 255, 255);
+      background-color: black;
+      padding: 15px;
+      text-align: center;
+      display: none;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -48,14 +57,14 @@
                   <li>
                     <a class="dropdown-item" href="#" onclick="showMessage()">ประวัติโรงเรียน</a>
                   </li>
-                  <li><a class="dropdown-item" href="#">วิสัยทัศน์/พันธกิจ</a></li>
-                  <li><a class="dropdown-item" href="#">โครงสร้างบริหาร</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="showMessage1()">วิสัยทัศน์/พันธกิจ</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="showMessage1()">โครงสร้างบริหาร</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">ฝ่ายงานต่างๆ</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="showMessage1()">ฝ่ายงานต่างๆ</a></li>
                 </ul>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#">ภาพกิจกรรม</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">ศูนย์ช่วยเหลือ</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" onclick="showMessage1()">ภาพกิจกรรม</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" onclick="showMessage1()">ศูนย์ช่วยเหลือ</a></li>
             </ul>
           </div>
         </div>
@@ -69,8 +78,9 @@
       <p>โรงเรียนรางวัลพระราชทาน ระดับก่อนประถมศึกษา<br>ขนาดกลาง ประจำปีการศึกษา 2565</p>
     </div>
 
-    <!-- https://k0rnfine.github.io/Saint_joseph/history -->
-    <div id="message">Nuh Uh ไม่ให้ไปหรอกนะน้องหาทางเอานะ  <br> (Hint: เช็ค Html ดีๆ)</div>
+    <!-- อยู่นี่น้อววงงง https://k0rnfine.github.io/Saint_joseph/history -->
+    <div id="message">Nuh Uh ไม่ให้ไปจ่ะหาทางเอานะ<br>(Hint: ดูใน HTML ดีๆ)</div>
+    <div id="message1">ใช้ไม่ได้จ่ะ</div>
 
   </div>
 
@@ -79,6 +89,13 @@
       const message = document.getElementById('message');
       message.style.display = 'block';
       message.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+  <script>
+    function showMessage1() {
+      const messag1 = document.getElementById('message1');
+      message1.style.display = 'block';
+      message1.scrollIntoView({ behavior: 'smooth' });
     }
   </script>
 
