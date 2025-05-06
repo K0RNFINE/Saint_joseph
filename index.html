@@ -16,6 +16,8 @@
       text-align: center;
       display: none;
       margin-top: 20px;
+      position: relative;
+      up: 20px;
     }
     
     #message1 {
@@ -25,6 +27,8 @@
       text-align: center;
       display: none;
       margin-top: 20px;
+      position: relative;
+      up: 20px;
     }
   </style>
 </head>
@@ -62,7 +66,7 @@
                   <li><a class="dropdown-item" href="#" onclick="showMessage1()">โครงสร้างบริหาร</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#" onclick="showMessage1()">ฝ่ายงานต่างๆ</a></li>
-                  <!-- สงสัยหรอน้อง -->
+                  <!-- สงสัยไรน้อง -->
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link" href="#" onclick="showMessage1()">ภาพกิจกรรม</a></li>
@@ -84,8 +88,8 @@
       </div>
 
     <!-- อยู่นี่น้อววงงง https://k0rnfine.github.io/Saint_joseph/history -->
-    <div id="message">Nuh Uh ไม่ให้ไปจ่ะหาทางเอานะ<br>(Hint: ดูใน HTML ดีๆ)</div>
-    <div id="message1">ใช้ไม่ได้จ่ะ</div>
+    <div id="message">Nuh Uh ไม่ให้ไปจ่ะหาทางเอานะ<br>(Hint: ดูใน HTML ดีๆ ใช้ HTML Inspector ถ้าน้องใช้โทรศัพท์)</div>
+    <div id="message1">ไม่ให้ใช้น่ะ</div>
 
   </div>
 
@@ -95,8 +99,7 @@
       message.style.display = 'block';
       message.scrollIntoView({ behavior: 'smooth' });
     }
-  </script>
-  <script>
+ 
     function showMessage1() {
       const messag1 = document.getElementById('message1');
       message1.style.display = 'block';
